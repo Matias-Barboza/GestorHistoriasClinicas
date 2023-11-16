@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table.border {
+            border-collapse: collapse;
+        }
+
+            table.border th {
+                padding: 5px;
+                border: 1px solid black;
+            }
+
+            table.border td {
+                padding: 5px;
+                border: 1px solid black;
+            }
+    </style>
+</head>
+<body>
+    <h1 align="center">Historia clínica:</h1>
+
+    <table border="1" style="width:100%">
+        <tr>
+            <td style="width:100%">
+                <table style="width:100%">
+                    <tr><td>ID Paciente:</td></tr>
+                    <tr><td style="width:100%;border-bottom:1px solid black">@idpaciente</td></tr>
+
+                    <tr><td>Nombre:</td> </tr>
+                    <tr><td style="width:100%;border-bottom:1px solid black">@nombre</td></tr>
+
+                    <tr><td>Apellido:</td></tr>
+                    <tr><td style="width:100%;border-bottom:1px solid black">@apellido</td></tr>
+
+                    <tr><td>DNI:</td></tr>
+                    <tr><td style="width:100%;border-bottom:1px solid black">@dni</td></tr>
+
+                    <tr><td>Fecha Generado:</td></tr>
+                    <tr><td style="width:100%;border-bottom:1px solid black">@fecha</td></tr>
+
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="3">
+                <table class="border" style="width:100%">
+                    <thead style="background-color:#D8D8D8">
+                        <tr>
+                            <th>Fecha de consulta</th>
+                            <th>Motivo de consulta</th>
+                            <th>Detalles de visita</th>
+                            <th>Estudios realizados</th>
+                            <th>Medicación</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        @Fila
+                    </tbody>
+
+                </table>
+            </td>
+        </tr>
+
+    </table>
+
+</body>
+</html>
